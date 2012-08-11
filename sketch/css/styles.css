@@ -1,0 +1,30 @@
+html{
+	margin:0;
+	padding:0;
+	font-family: Arial;
+
+}
+#controls{
+	margin:10px;
+}
+#mrtough{
+	border:1px solid black;
+	border-radius: 8px
+}
+
+#mrtoughog{
+	position:absolute;
+	left:9px;
+	opacity:.1;
+
+	/*display:none;*/
+	/*visibility: hidden;
+	left:-1000px;*/
+	color:red;
+}
+
+.slider{
+	width:300px;
+	margin:10px;
+
+}
