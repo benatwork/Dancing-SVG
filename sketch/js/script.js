@@ -9,14 +9,26 @@ var maxPhases = 1;
 
 
 var phase = 1;
-var a = document.getElementById("mrtough");
-var b = document.getElementById('mrtoughog');
-var svg = a.contentDocument;
-var originalSvg = b.contentDocument;
+
+
+
 
 
 
 $(document).ready(function() {
+	var a = document.getElementById("mrtough");
+	var b = document.getElementById('mrtoughog');
+	var svg = a.contentDocument;
+	var originalSvg = b.contentDocument;
+	function checkReady(){
+		if (svg == null || originalSvg ==  null) {
+			setTimeout(checkReady(), 300);
+		} else {
+			
+		    movePoints();
+		}
+	}
+
 	function movePoints(){
 			var paths = svg.getElementsByTagName('path');
 			var ogPaths = originalSvg.getElementsByTagName('path');
@@ -93,8 +105,7 @@ $(document).ready(function() {
 
 
 
-	movePoints();
-
+	checkReady()
 
 });
 
