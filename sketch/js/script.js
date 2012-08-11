@@ -25,7 +25,7 @@ $(document).ready(function() {
 			setTimeout(checkReady(), 300);
 		} else {
 			
-		    movePoints();
+		    setTimeout(movePoints,500);
 		}
 	}
 
