@@ -28,3 +28,12 @@ html{
 	margin:10px;
 
 }
+
+a{
+	color:red;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
